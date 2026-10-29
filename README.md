@@ -10,7 +10,7 @@
 
 ## Live Link
 
-**Deployment URL:** <paste your deployed URL here>
+**Deployment URL:** https://bdf-lab-1-fm88.onrender.com/
 
 ## Objective
 
