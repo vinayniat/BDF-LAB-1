@@ -28,11 +28,10 @@ To set up a Node.js project, create a basic HTTP server using the built-in `http
 
 ```
 lab-01/
-├── screenshots/
-│   ├── home.png
-│   ├── about.png
-│   ├── time.png
-│   └── not-found.png
+├── WELCOME.png
+├── ABOUT.png
+├── TIME.png
+├── ERROR.png
 ├── server-http.js
 ├── server.js
 ├── package.json
@@ -97,25 +96,25 @@ The `/anything` path is an example of an unknown route. Other undefined paths sh
 
 Displays the welcome message.
 
-![Home route response](screenshots/home.png)
+![Home route response](WELCOME.png)
 
 ### 2. About Route
 
 Displays the student's name and section in JSON format.
 
-![About route response](screenshots/about.png)
+![About route response](ABOUT.png)
 
 ### 3. Time Route
 
 Displays the current date and time.
 
-![Time route response](screenshots/time.png)
+![Time route response](TIME.png)
 
 ### 4. Unknown Route
 
 Displays the 404 Page Not Found response.
 
-![404 route response](screenshots/not-found.png)
+![404 route response](ERROR.png)
 
 ## HTTP Status Codes
 
@@ -146,5 +145,5 @@ Example: If a port was already in use, stop the other server before starting the
 
 - The `.gitignore` file excludes `node_modules/` and `.env`.
 - The `node_modules/` directory must not be committed.
-- Screenshots are stored in the `screenshots/` directory.
+- Screenshots are stored in the repository root as image files.
 - The project is submitted through the course GitHub repository.
