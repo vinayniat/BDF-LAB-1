@@ -13,7 +13,7 @@
 ## Live Link
 
 - **Deployment Status:** Local / Postman Verified
-- **Deployment URL:** `Not applicable`
+- **Deployment URL:** https://bdf-lab-02-h9bc.onrender.com
 - **Reason:** SQLite operates as an in-process, file-based database (`bookstore.db`). Free cloud hosting tiers (such as Render or Railway free containers) use ephemeral filesystems that discard SQLite file changes on restart and sleep cycles without mounted persistent disk storage. To verify complete end-to-end functionality, high-resolution Postman screenshots for all 5 CRUD operations, error handling (404), and SQLite CLI database verification are documented below.
 
 ---
