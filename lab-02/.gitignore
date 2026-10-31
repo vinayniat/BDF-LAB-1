@@ -1,0 +1,7 @@
+node_modules/
+.env
+.DS_Store
+*.log
+terminal_view.html
+make_terminal_png.js
+.repo_temp/

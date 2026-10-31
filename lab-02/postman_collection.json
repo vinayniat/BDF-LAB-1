@@ -1,0 +1,97 @@
+{
+  "info": {
+    "name": "BDF LAB 2 - Express SQLite Book CRUD",
+    "description": "Collection of requests for testing Express + SQLite Book CRUD endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. GET All Books",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", ""]
+        }
+      }
+    },
+    {
+      "name": "2. GET Book by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/1/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", "1", ""]
+        }
+      }
+    },
+    {
+      "name": "3. POST Add Book",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Atomic Habits\",\n  \"author\": \"James Clear\",\n  \"price\": 499,\n  \"pages\": 320\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/books/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", ""]
+        }
+      }
+    },
+    {
+      "name": "4. PUT Update Book",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Atomic Habits (Updated Edition)\",\n  \"author\": \"James Clear\",\n  \"price\": 599,\n  \"pages\": 350\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/books/1/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", "1", ""]
+        }
+      }
+    },
+    {
+      "name": "5. DELETE Book by ID",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/10/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["books", "10", ""]
+        }
+      }
+    }
+  ]
+}

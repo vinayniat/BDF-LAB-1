@@ -1,0 +1,32 @@
+### 1. GET All Books
+GET http://localhost:3000/books/
+Accept: application/json
+
+### 2. GET Book by ID (e.g. ID = 1)
+GET http://localhost:3000/books/1/
+Accept: application/json
+
+### 3. POST Add New Book
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Robert C. Martin",
+  "price": 650,
+  "pages": 464
+}
+
+### 4. PUT Update Book (e.g. ID = 1)
+PUT http://localhost:3000/books/1/
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby (Collector's Edition)",
+  "author": "F. Scott Fitzgerald",
+  "price": 550,
+  "pages": 190
+}
+
+### 5. DELETE Book by ID (e.g. ID = 10)
+DELETE http://localhost:3000/books/10/
